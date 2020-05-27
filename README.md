@@ -4,8 +4,9 @@ Provision a 1 Master, 1 Worker kubernetes lab with Vagrant.
 
 - Kubernetes 1.18
 - Ubuntu base
-- Vagrant, currently with VMware Fusion
 - Master untainted
+- kubectl autocomplete and k alias
+- Currently tested with VMware Fusion
 
 ```
 vagrant up
