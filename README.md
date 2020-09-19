@@ -1,5 +1,4 @@
-# vagrant-k8s
-
+# Kubernetes VM Lab, provisioned by Vagrant
 Provision a 1 Master, 1 Worker kubernetes lab with Vagrant.
 
 - Kubernetes 1.18
