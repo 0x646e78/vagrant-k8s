@@ -18,7 +18,7 @@ Then join the worker to the master:
 ```
 vagrant ssh k8smaster -c "kubeadm token create --print-join-command 2>/dev/null" 2>/dev/null
 vagrant ssh k8sworker1 -c "sudo kubeadm <paste output from above line>"
-
+```
 
 Note for Parallels users:
 
