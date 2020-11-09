@@ -20,20 +20,20 @@ vagrant ssh k8smaster -c "kubeadm token create --print-join-command 2>/dev/null"
 vagrant ssh k8sworker1 -c "sudo kubeadm <paste output from above line>"
 ```
 
-Note for Parallels users:
+Connect and see that pods are running:
+
+```
+vagrant ssh k8smaster
+k get nodes --all-namespaces
+```
+
+_Note for Parallels users:_
 
 There is a [bug with multi-machine provisioning in vagrant-parallels][parallels-bug]
 You will need to disable parallel provisioning of vagrant if you encounter this:
 
 ```
 export VAGRANT_NO_PARALLEL=true
-```
-
-Connect and see that pods are running:
-
-```
-vagrant ssh k8smaster
-k get nodes --all-namespaces
 ```
 
 ## Configuration
