@@ -58,3 +58,5 @@ Memory: 4Gi
 
 This creates the pod network as 172.16.10.0/24. Update provision-master.sh 
 if this is a routable network from your host machine.
+
+[parallels-bug]: https://github.com/Parallels/vagrant-parallels/issues/357
