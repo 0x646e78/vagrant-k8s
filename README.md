@@ -27,15 +27,6 @@ vagrant ssh k8smaster
 k get nodes --all-namespaces
 ```
 
-_Note for Parallels users:_
-
-There is a [bug with multi-machine provisioning in vagrant-parallels][parallels-bug]
-You will need to disable parallel provisioning of vagrant if you encounter this:
-
-```
-export VAGRANT_NO_PARALLEL=true
-```
-
 ## Configuration
 
 Memory and CPU core allocation can be customised in  `Vagrantfile`.
