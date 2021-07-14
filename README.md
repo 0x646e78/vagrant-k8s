@@ -3,11 +3,13 @@
 Provision a 1 Master, 1 Worker Kubernetes lab with Vagrant.
 
 - Kubernetes 1.19
-- Ubuntu LTS base
+- Ubuntu LTS base (20.04)
 - Calico network provider
 - Master untainted
 - kubectl autocomplete and k alias
 - Currently tested with VMware Fusion, Virtualbox and Parallels
+
+Run:
 
 ```
 vagrant up
