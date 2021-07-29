@@ -2,12 +2,22 @@
 
 Provision a 1 Master, 1 Worker Kubernetes lab with Vagrant.
 
-- Kubernetes 1.19
-- Ubuntu LTS base (20.04)
+Various kubernetes versions, runtimes and CNI providers are available, the naming of the subfolders indicates what is available.
+
+Including:
+
+- Kubernetes 1.19, 1.20
+- Ubuntu 18.04, 20.04
 - Calico network provider
 - Master untainted
 - kubectl autocomplete and k alias
 - Currently tested with VMware Fusion, Virtualbox and Parallels
+
+Choose your setup, for example to deploy Kubernetes v1.19 with Docker & Calico on Ubuntu LTS:
+
+```
+cd v19-docker-calico-ubuntu2004
+```
 
 Run:
 
@@ -26,7 +36,8 @@ Connect and see that pods are running:
 
 ```
 vagrant ssh k8smaster
-k get nodes --all-namespaces
+k get nodes
+k get pods --all-namespaces
 ```
 
 ## Configuration

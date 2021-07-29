@@ -17,7 +17,7 @@ add-apt-repository \
   stable"
 
 apt-get update
-apt-get install -y kubelet kubeadm kubectl \
+apt-get install -y kubelet=1.19.13-00 kubeadm=1.19.13-00 kubectl=1.19.13-00 \
   containerd.io=1.2.13-2 \
   docker-ce=5:19.03.11~3-0~ubuntu-$(lsb_release -cs) \
   docker-ce-cli=5:19.03.11~3-0~ubuntu-$(lsb_release -cs)
