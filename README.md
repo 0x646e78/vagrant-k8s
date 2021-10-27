@@ -2,7 +2,7 @@
 
 Provision a local kubernetes lab with Vagrant.
 
-## Pre-req
+## pre-reqs
 
 Vagrant & either Parallels, Virtual Box or VMWare Fusion.
 
