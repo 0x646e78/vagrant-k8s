@@ -41,7 +41,9 @@ Featuring:
 - Control Plane untainted
 - Currently tested with VMware Fusion, Virtualbox and Parallels
 
-## Memory & CPU allocation
+## Configuration
+
+### Memory & CPU allocation
 
 Memory and CPU allocation can be customised in `Vagrantfile`.
 By default memory and CPU cores are:
@@ -51,7 +53,7 @@ By default memory and CPU cores are:
 |Control Plane | 3 | 6Gi |
 |Worker        | 2 | 4Gi |
 
-## Networking:
+### Networking:
 
 The pod network cidr is created as `172.16.10.0/24`. Update `provision-master.sh` to change this, such as 
 if this is a routable network from your host machine.
