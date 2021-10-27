@@ -1,17 +1,19 @@
 # Kubernetes VM Lab, provisioned by Vagrant
 
-Provision a 1 Master, 1 Worker Kubernetes lab with Vagrant.
+Provision a local Kubernetes lab.
+
+I originally created this while preparing for the CKA exam. Since then I have expanded to include more recent versions, including a lab for the CKS curriculum. Currently these are all kubeadm created bare-bones clusters. No admission controllers or additional features have been installed aside from some basic tooling such as jq.
 
 Various kubernetes versions, runtimes and CNI providers are available, the naming of the subfolders indicates what is available.
 
-Including options for:
+Featuring:
 
 - Kubernetes 1.19, 1.20, 1.21
 - Ubuntu 18.04, 20.04
 - Calico network provider
 - Docker or containerd runtime
-- Master untainted
 - kubectl autocomplete and k alias
+- Control Plane untainted
 - Currently tested with VMware Fusion, Virtualbox and Parallels
 
 ## Starting the VMs
@@ -19,12 +21,7 @@ Including options for:
 Choose your setup, for example to deploy Kubernetes v1.19 with Docker & Calico on Ubuntu LTS:
 
 ```
-cd v19-docker-calico-ubuntu2004
-```
-
-Run:
-
-```
+cd v119-docker-calico-ubuntu2004
 vagrant up
 ```
 
