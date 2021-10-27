@@ -22,15 +22,10 @@ Choose your setup, for example to deploy Kubernetes v1.19 with Docker & Calico o
 
 ```
 cd v119-docker-calico-ubuntu2004
-vagrant up
+./install
 ```
 
-Then join the worker to the master:
-
-```
-vagrant ssh k8smaster -c "kubeadm token create --print-join-command 2>/dev/null" 2>/dev/null
-vagrant ssh k8sworker1 -c "sudo kubeadm <paste output from above line>"
-```
+Some labs require an additional step, which will be given in the output of the install.
 
 Connect and see that pods are running:
 
