@@ -4,7 +4,7 @@ Provision a local kubernetes lab with Vagrant.
 
 ## pre-reqs
 
-Vagrant & either Parallels, Virtual Box or VMWare Fusion.
+[Vagrant](https://www.vagrantup.com/) & Parallels, Virtual Box or VMWare Fusion.
 
 ## Starting the VMs
 
