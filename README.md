@@ -1,4 +1,4 @@
-# Kubernetes VM Lab, provisioned by Vagrant
+# Kubernetes VM labs
 
 Provision a local Kubernetes lab.
 
