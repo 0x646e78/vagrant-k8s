@@ -1,6 +1,6 @@
 # Kubernetes VM labs
 
-Provision a local Kubernetes lab.
+Provision a local Kubernetes lab with Vagrant.
 
 I originally created this while preparing for the CKA exam. Since then I have expanded to include more recent versions, including a lab for the CKS curriculum. Currently these are all kubeadm created bare-bones clusters. No admission controllers or additional features have been installed aside from some basic tooling such as jq.
 
