@@ -27,7 +27,7 @@ k get pods --all-namespaces
 
 ## Overview
 
-I started this while preparing for the CKA exam. Since then I have expanded to include recent versions, and used this as a lab environment for the CKS curriculum. 
+I started this while preparing for the CKA exam. Since then I have expanded to include recent versions, and used this as a lab environment for the CKS curriculum. I try to maintain the prior versions for use in pentest labs and safe spaces to try things I encounter in prod, if you find any bugs or have a feature request please raise a github issue.
 
 Currently these are all kubeadm created bare-bones clusters. No admission controllers or additional features have been installed aside from some basic tooling such as jq.
 
