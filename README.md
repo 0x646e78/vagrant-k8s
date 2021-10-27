@@ -27,19 +27,20 @@ k get pods --all-namespaces
 
 ## Overview
 
-I originally created this while preparing for the CKA exam. Since then I have expanded to include more recent versions, including a lab for the CKS curriculum. Currently these are all kubeadm created bare-bones clusters. No admission controllers or additional features have been installed aside from some basic tooling such as jq.
+I started this while preparing for the CKA exam. Since then I have expanded to include recent versions, and used this as a lab environment for the CKS curriculum. 
 
-Various kubernetes versions, runtimes and CNI providers are available, the naming of the subfolders indicates what is available.
+Currently these are all kubeadm created bare-bones clusters. No admission controllers or additional features have been installed aside from some basic tooling such as jq.
 
-Featuring:
+Various kubernetes versions, runtimes and CNI providers are available, the naming of the subfolders indicates the configuration.
+
+Current options:
 
 - Kubernetes 1.19, 1.20, 1.21
 - Ubuntu 18.04, 20.04
 - Calico network provider
 - Docker or containerd runtime
 - kubectl autocomplete and k alias
-- Control Plane untainted
-- Currently tested with VMware Fusion, Virtualbox and Parallels
+- Control Plane untainted by default
 
 ## Configuration
 
